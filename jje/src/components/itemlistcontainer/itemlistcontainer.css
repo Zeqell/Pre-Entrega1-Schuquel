@@ -1,0 +1,6 @@
+.div-item{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
