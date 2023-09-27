@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "image": "",
+        "title": "Producto 1",
+        "price": 200.000,
+        "category": "cocina"
+    },
+    {
+        "id": 2,
+        "image": "",
+        "title": "Producto 2",
+        "price": 200.000,
+        "category": "cocina"
+    },
+    {
+        "id": 3,
+        "image": "",
+        "title": "Producto 3",
+        "price": 200.000,
+        "category": "cocina"
+    },
+    {
+        "id": 4,
+        "image": "",
+        "title": "Producto 4",
+        "price": 200.000,
+        "category": "cocina"
+    },
+    {
+        "id": 5,
+        "image": "",
+        "title": "Producto 5",
+        "price": 200.000,
+        "category": "cocina"
+    },
+    {
+        "id": 6,
+        "image": "",
+        "title": "Producto 6",
+        "price": 200.000,
+        "category": "dormitorios"
+    },
+    {
+        "id": 7,
+        "image": "",
+        "title": "Producto 7",
+        "price": 200.000,
+        "category": "dormitorios"
+    },
+    {
+        "id": 8,
+        "image": "",
+        "title": "Producto 8",
+        "price": 200.000,
+        "category": "dormitorios"
+    },
+    {
+        "id": 9,
+        "image": "",
+        "title": "Producto 9",
+        "price": 200.000,
+        "category": "dormitorios"
+    },
+    {
+        "id": 10,
+        "image": "",
+        "title": "Producto 10",
+        "price": 200.000,
+        "category": "dormitorios"
+    },
+    {
+        "id": 11,
+        "image": "",
+        "title": "Producto 11",
+        "price": 200.000,
+        "category": "comedor"
+    },
+    {
+        "id": 12,
+        "image": "",
+        "title": "Producto 12",
+        "price": 200.000,
+        "category": "comedor"
+    },
+    {
+        "id": 13,
+        "image": "",
+        "title": "Producto 13",
+        "price": 200.000,
+        "category": "comedor"
+    },
+    {
+        "id": 14,
+        "image": "",
+        "title": "Producto 14",
+        "price": 200.000,
+        "category": "comedor"
+    },
+    {
+        "id": 15,
+        "image": "",
+        "title": "Producto 15",
+        "price": 200.000,
+        "category": "comedor"
+    }
+]
