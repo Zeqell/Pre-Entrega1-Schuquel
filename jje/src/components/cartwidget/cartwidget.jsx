@@ -1,7 +1,17 @@
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Typography } from '@mui/material';
+import { useCartContext } from '../../Context/CartContect';
 const CartWidget = () => {
-    return (<> <AddShoppingCartIcon sx={{ color: "white",}} /> <span style={{ color: "white" }}>(0)</span> </>);
+    const { cart } = useCartContext();
+
+    return (
+        <div style={{ display: "flex", alignItems: "center" }}>
+            <ShoppingCartIcon />
+            <Typography>{cart.items.length}</Typography>
+        </div>
+
+
+    );
 }
 
 export default CartWidget;

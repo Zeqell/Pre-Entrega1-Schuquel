@@ -1,26 +1,31 @@
-import './App.css'
-import ItemListContainer from './components/itemlistcontainer/itemlistcontainer'
-import Navbar from './components/navbar/navbar'
-import Categories from './components/categories/Categories'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import ProductList from './components/products/productList'
-import CategoriesProductList from './components/categories/categoriesProductList'
+import './style.css'
+import Categories from './components/categories/Categories';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CategoriesProductList from './components/categories/CategoryProductList'
+import Navbar from './components/Navbar/Navbar';
+import Cart from './components/Checkout/Cart';
+import CartProvider from './Context/CartContect';
+import ProductList from './components/Products/ProductList';
 
 
 function App() {
-  const greeting="Bienvenidos a JJE"
+
   return (
     <>
-    <Router>
-      <Navbar/>
-      <Routes>
-        <Route exact path='/' element={<Categories/>} />
-        <Route exact path='/products' element={<ProductList/>}/>
-        <Route exact path='/categoty/:categoryId' element={<CategoriesProductList/>}/>
-      </Routes>
-    </Router>
+      <CartProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Categories />} />
+            <Route exact path='/products' element={<ProductList />} />
+            <Route exact path='/category/:categoryId' element={<CategoriesProductList />} />
+            <Route exact path='/cart' element={<Cart />} />
+          </Routes>
+        </Router>
+      </CartProvider>
+
     </>
   )
 }
 
-export default App;
+export default App

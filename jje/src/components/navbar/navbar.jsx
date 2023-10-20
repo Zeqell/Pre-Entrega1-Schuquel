@@ -1,35 +1,29 @@
-import { AppBar, Button, Toolbar, Typography} from '@mui/material';
-import './navbar.css';
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 import CartWidget from '../cartwidget/cartwidget';
-import { NavLink } from 'react-router-dom';
 
-const navbar = () => {
+const Navbar = () => {
 
-    return ( <AppBar sx = {{backgroundColor:"black"}}>
-        <Toolbar sx={{display: "flex", justifyContent: "space-around"}}>
-            <NavLink className="navbar-link" to = "/">
-                <Typography sx={{color: "white"}} >
-                    JJE
-                </Typography>
-            </NavLink>
-            <NavLink className="navbar-link" to = "/">
-                <Button sx={{color: "white"}}>
-                    Home
-                </Button>
-            </NavLink>
-            <NavLink className="navbar-link" to = "/products">
-                <Button sx={{color: "white"}}>
-                    Productos
-                </Button>
-            </NavLink>
-            <NavLink className="navbar-link" to = "/category">
-                <Button sx={{color: "white"}}>
-                    Categorias
-                </Button>             
-            </NavLink>            
-            <CartWidget />
-        </Toolbar>
-    </AppBar>);
+    return (
+        <AppBar sx={{ backgroundColor: "#548687" }}>
+            <Toolbar sx={{ display: "flex", justifyContent: "space-around" }}>
+                <NavLink className="navbar-link" to="/">
+                    <Typography >
+                        Home/Categorías
+                    </Typography>
+                </NavLink>
+                <NavLink className="navbar-link" to="/products">
+                    <Typography >
+                        Productos
+                    </Typography>
+                </NavLink>
+                <NavLink className="navbar-link" to="/cart">
+                    <CartWidget />
+                </NavLink>
+
+            </Toolbar>
+        </AppBar>
+    );
 }
 
-export default navbar;
+export default Navbar;
