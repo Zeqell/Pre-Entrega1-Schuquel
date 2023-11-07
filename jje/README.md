@@ -1,8 +1,30 @@
-# React + Vite
+REACT - CODERHOUSE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Alumno: Schuquel Ricardo Ezequiel
 
-Currently, two official plugins are available:
+SERVICIO: FIREBASE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se separa la logica de firebase en un archivo "main.jsx"
+
+CONTEXT
+
+Administra la logica del carrito
+posee las gestiones necesarias: agregar item, sacar todos y brindar totalizadores
+
+Tambien hace de Provider
+
+PAGINAS (ROUTES)
+COMPONENTE: *carrito
+            *cardWidget
+            *checkout
+            *contacto
+            *items (item, itemCount, itemDetail,
+            itemDetailContainer, itemList, itemListContainer)
+            *navbar
+            *nosotros
+            
+
+
+
+
+
