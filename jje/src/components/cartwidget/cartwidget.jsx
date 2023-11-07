@@ -1,17 +1,18 @@
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Typography } from '@mui/material';
-import { useCartContext } from '../../Context/CartContect';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "../../Context/CartContect";
+
 const CartWidget = () => {
-    const { cart } = useCartContext();
+    const { cantidadEnCarrito } = useContext(CartContext);
 
     return (
-        <div style={{ display: "flex", alignItems: "center" }}>
-            <ShoppingCartIcon />
-            <Typography>{cart.items.length}</Typography>
+        <div>
+            <Link className="menu-link" to="/carrito">
+                Carrito
+                <span className="numerito">{cantidadEnCarrito()}</span>
+            </Link>
         </div>
-
-
     );
-}
+};
 
 export default CartWidget;
